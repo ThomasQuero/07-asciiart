@@ -1,3 +1,11 @@
+
+"""
+Module d'encodage de chaînes de caractères en tuples (caractère, nombre d'occurrences).
+Contient des fonctions itérative et récursive pour l'encodage.
+"""
+import sys
+sys.setrecursionlimit(2000)
+
 #### Imports et définition des variables globales
 
 
@@ -14,7 +22,6 @@ def artcode_i(s):
     Returns:
         list: la liste des tuples (caractère, nombre d'occurences)
     """
-    
     tuples = []
     if not s:
         return tuples
@@ -41,7 +48,6 @@ def artcode_r(s):
     Returns:
         list: la liste des tuples (caractère, nombre d'occurences)
     """
-    
     if not s:
         return []
     # Compter le nombre d'occurrences du premier caractère
@@ -50,12 +56,12 @@ def artcode_r(s):
         count += 1
     # Appel récursif sur le reste de la chaîne
     return [(s[0], count)] + artcode_r(s[count:])
-    
 
 #### Fonction principale
 
 
 def main():
+    """Fonction principale : affiche les résultats des deux encodages sur un exemple."""
     print(artcode_i('MMMMaaacXolloMM'))
     print(artcode_r('MMMMaaacXolloMM'))
 
