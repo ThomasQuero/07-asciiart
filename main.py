@@ -5,7 +5,8 @@
 
 
 def artcode_i(s):
-    """retourne la liste de tuples encodant une chaîne de caractères passée en argument selon un algorithme itératif
+    """retourne la liste de tuples encodant une chaîne de caractères 
+    passée en argument selon un algorithme itératif
 
     Args:
         s (str): la chaîne de caractères à encoder
@@ -31,7 +32,8 @@ def artcode_i(s):
 
 
 def artcode_r(s):
-    """retourne la liste de tuples encodant une chaîne de caractères passée en argument selon un algorithme récursif
+    """retourne la liste de tuples encodant une chaîne de caractères passée 
+    en argument selon un algorithme récursif
 
     Args:
         s (str): la chaîne de caractères à encoder
